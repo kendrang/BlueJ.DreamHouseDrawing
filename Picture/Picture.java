@@ -31,27 +31,106 @@ public class Picture
     public void draw()
     {
         wall = new Square();
+        wall.changeColor("blue");
+        wall.moveVertical(-50);
+        wall.moveHorizontal(-65);
+        wall.changeSize(400);
+        wall.makeVisible();
+       
+  
+        sun = new Circle();
+        sun.changeColor("white");
+        sun.moveVertical(-10);
+        sun.moveHorizontal(38);
+        sun.changeSize(20);
+        sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("white");
+        sun.moveVertical(-30);
+        sun.moveHorizontal(25);
+        sun.changeSize(30);
+        sun.makeVisible();
+        
+        wall = new Square();
+        wall.changeColor("black");
         wall.moveVertical(80);
         wall.changeSize(100);
         wall.makeVisible();
+        
+        wall = new Square();
+        wall.changeColor("black");
+        wall.moveVertical(20);
+        wall.changeSize(30);
+        wall.makeVisible();
+        
+        
+        wall = new Square();
+        wall.changeColor("black");
+        wall.moveVertical(180);
+        wall.moveHorizontal (-60);
+        wall.changeSize(500);
+        wall.makeVisible();
+        
+        wall = new Square ();
+        wall.changeColor("black");
+        wall.moveVertical(50);
+        wall.changeSize(30);
+        wall.makeVisible();
+        
+        wall = new Square ();
+        wall.changeColor("black");
+        wall.moveVertical(50);
+        wall.moveHorizontal(70);
+        wall.changeSize(30);
+        wall.makeVisible();
 
         window = new Square();
-        window.changeColor("black");
-        window.moveHorizontal(20);
+        window.changeColor("yellow");
+        window.moveHorizontal(10);
         window.moveVertical(100);
+        window.changeSize (30);
+        window.makeVisible();
+        
+        window = new Square();
+        window.changeColor("yellow");
+        window.moveHorizontal(60);
+        window.moveVertical(100);
+        window.makeVisible();
+        
+        window = new Square();
+        window.changeColor("yellow");
+        window.moveHorizontal(30);
+        window.moveVertical(150);
         window.makeVisible();
 
         roof = new Triangle();
+        roof.changeColor("black");
         roof.changeSize(50, 140);
         roof.moveHorizontal(60);
         roof.moveVertical(70);
         roof.makeVisible();
+        
+        roof = new Triangle();
+        roof.changeColor("yellow");
+        roof.changeSize(140, 80);
+        roof.moveHorizontal(55);
+        roof.moveVertical(200);
+        roof.makeVisible();
+
 
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(180);
         sun.moveVertical(-10);
         sun.changeSize(60);
+        sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("blue");
+        sun.moveHorizontal(180);
+        sun.moveVertical(-10);
+        sun.changeSize(45);
         sun.makeVisible();
     }
 
